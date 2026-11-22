@@ -1,0 +1,307 @@
+% =====================================================================
+%  Dark Matter — front matter
+%  Half-title, title page, copyright, dedication, epigraph, contents,
+%  figures, tables, preface, how to use.
+% =====================================================================
+
+% ---- Half-title ---------------------------------------------------------
+\pagestyle{plain}
+\clearpage
+\thispagestyle{empty}
+\vspace*{1.15in}
+{\sffamily\fontsize{22}{26}\selectfont\color{txt}\bookTitle\par}
+\vspace{10pt}
+{\sffamily\fontsize{11}{14}\selectfont\color{txtdim}\bookSubtitle\par}
+\vfill
+{\sffamily\small\color{txtdim}\bookAuthor\par}
+\vspace{6pt}
+{\sffamily\small\color{txtdim}\bookImprint\par}
+\clearpage
+
+% ---- Title page ---------------------------------------------------------
+\clearpage
+\thispagestyle{empty}
+\vspace*{0.75in}
+{\sffamily\fontsize{26}{30}\selectfont\bfseries\color{txt}\bookTitle\par}
+\vspace{12pt}
+{\sffamily\fontsize{12}{16}\selectfont\color{accent}\bookSubtitle\par}
+\vspace{22pt}
+\noindent{\color{accent}\rule{\textwidth}{1.8pt}}\par
+\vspace{18pt}
+{\sffamily\large\color{txt}\bookAuthor\par}
+\vspace{8pt}
+{\sffamily\color{txtdim}\bookImprint, publisher\par}
+\vspace{4pt}
+{\sffamily\color{txtdim}\bookEdition\par}
+\vspace{18pt}
+{\sffamily\small\color{txtdim}
+Facts current as of \bookFactsDate.\par}
+\vfill
+\clearpage
+
+% ---- Copyright page -----------------------------------------------------
+\clearpage
+\thispagestyle{plain}
+\noindent{\sffamily\bfseries\color{txt}\bookTitle}\par
+\noindent{\sffamily\small\color{txtdim}\bookSubtitle}\par
+\vspace{14pt}
+\noindent\rule{\textwidth}{0.4pt}\par
+\vspace{10pt}
+\noindent Copyright \textcopyright\ \bookCopyright\ \bookAuthor. All rights reserved.\par
+\vspace{6pt}
+\noindent \bookImprint, publisher.\par
+\vspace{10pt}
+\noindent\textbf{Edition:} \bookEdition.\par
+\vspace{6pt}
+\noindent\textbf{Subject headings:} Cosmology --- Dark matter; Astrophysics ---
+Cosmology; Particle physics --- Dark matter; Direct detection (Astronomy);
+Axions (Physics); Black holes (Astronomy).\par
+\vspace{10pt}
+\noindent\textbf{Licence.} This work is published under the Apache License,
+Version 2.0. The complete licence text is available at
+\href{https://www.apache.org/licenses/LICENSE-2.0}{\code{apache.org/licenses/LICENSE-2.0}}.
+The book may be copied, modified and redistributed, including for commercial
+purposes, provided that this notice and the attribution required by the licence
+are retained.\par
+\vspace{10pt}
+\noindent\textbf{DOI:} \href{https://doi.org/\bookDOI}{\texttt{\bookDOI}}\par
+\vspace{10pt}
+\noindent\textbf{ISBN:} 978-1-0000-0000-0 (placeholder; to be assigned on
+publication).\par
+\vspace{10pt}
+\noindent\textbf{Source materials.} The sources of this book, the build scripts,
+the figures and the research ledger behind it are published at
+\texttt{github.com/lordxmen2k/Dark-Matter-True-Origins}.\par
+\vspace{10pt}
+\noindent\textbf{What this book is.} This book is an assessment of a research
+field at a stated date, written from primary sources. It reports what the
+evidence establishes, what it does not, which explanations remain viable, and
+what should be built, funded and decided next. It does not assert that dark
+matter has been found, and it does not assert that any particular candidate is
+correct. Where a claim could not be tied to a primary record, it is named as
+unverified or dropped; the source ledger accompanying this book records that
+process, including the claims that were dropped.\par
+\vspace{10pt}
+\noindent\textbf{Disclaimers.} The names of experiments, collaborations,
+institutions and software projects mentioned in this book are the names of the
+people and things whose work is being discussed. Their inclusion is not a
+statement that they endorse, support or have verified anything described here.
+Numerical results are quoted at the precision their source publications
+support, and are date-stamped where they are likely to change.\par
+\vspace{10pt}
+\noindent\textbf{Facts current as of} \bookFactsDate. Statements that are likely
+to change --- the status of the 248 keV candidate, the state of the exclusion
+frontier, the status of any anomaly under replication --- are date-stamped
+where they appear. Nothing in this book should be read as a statement about
+events after that date.\par
+\vspace{8pt}
+\noindent{\color{accent}\rule{\textwidth}{0.4pt}}\par
+\vspace{8pt}
+{\small\color{txtdim}\sffamily
+\noindent A note on the sources. Every identifier in the Notes and References was
+resolved against the arXiv API, the Crossref bibliographic query API or
+INSPIRE-HEP, and the resolved title was compared against the paper it was
+intended to cite. Where a resolution failed, the claim was removed rather than
+re-sourced from memory.\par}
+
+% ---- Dedication ---------------------------------------------------------
+\clearpage
+\thispagestyle{empty}
+\vspace*{2.5in}
+  \begin{center}
+    {\large\itshape\color{txt}
+      To the people who kept the detectors cold through the winter,\\
+      \hspace*{1em}and to the ones who read the appendix first.\par}
+  \end{center}
+  \vfill
+\clearpage
+
+% ---- Epigraph ------------------------------------------------------------
+\clearpage
+\thispagestyle{empty}
+\vspace*{2.0in}
+  \begin{center}
+    \begin{minipage}{0.88\textwidth}
+      \raggedright
+      {\sffamily\color{accent}\rule{\textwidth}{2pt}}\par
+      \vspace{14pt}
+      {\large\itshape\color{txt}
+      ``We have never touched it. Every number we hold about dark matter was
+      inferred from its gravity, and the coupling we would need before that
+      gravity could be called energy is about ten orders of magnitude out of
+      reach.''\par}
+      \vspace{12pt}
+      {\raggedleft\sffamily\small\color{txtdim}
+      The author\par}
+    \end{minipage}
+  \end{center}
+  \vfill
+\clearpage
+
+% ---- Contents -----------------------------------------------------------
+\clearpage
+\pdfbookmark[0]{Contents}{contents}
+\tableofcontents
+
+% ---- List of figures ----------------------------------------------------
+\clearpage
+\pdfbookmark[0]{List of Figures}{list-of-figures}
+\listoffigures
+
+% ---- List of tables -----------------------------------------------------
+\clearpage
+\pdfbookmark[0]{List of Tables}{list-of-tables}
+\listoftables
+
+% ---- Preface ------------------------------------------------------------
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\markboth{Preface}{Preface}
+
+\thispagestyle{plain}
+
+Dark matter is the largest thing in the universe that nobody has ever held.
+It accounts for roughly a quarter of all the energy in existence, it holds
+galaxies together, it shapes the sky, and it has never produced a single
+detectable event in any laboratory on Earth. It is also, by the standards of
+physics, the best-evidenced hypothetical in the history of the subject: five
+independent lines of evidence converge on the same number, and that number is
+known to a few parts in a thousand.
+
+That combination --- overwhelming evidence for the existence of something, and
+no evidence at all about what it is --- is unusual, and it is the reason the
+question deserves a book written for the present rather than for the archive.
+
+The situation changed in a specific way over the year before this book was
+written, and the change is what gives the assessment its shape. In September
+2026 the LZ collaboration reported a single event in an energy window its
+standard analysis had excluded, at a significance of 3.4$\sigma$ local and 2.6$\sigma$
+global. Six interpretation papers appeared within four days. The event is
+real, the data are public, and the analysis was not blinded. By the
+standards the field has set for itself since the 3.5~keV line and the
+21~cm anomaly, it is a candidate, not a discovery --- and the interesting
+question is not whether it will survive, but what the field should do while
+waiting to find out.
+
+This book is written on the assumption that the next decade will not settle
+the question by one dramatic event. It will settle it, if it settles it at
+all, by a portfolio of experiments, astrophysical surveys and cosmological
+measurements whose results are individually interpretable and collectively
+decisive. The book's purpose is to say what that portfolio should contain,
+what each experiment would and would not prove, and which candidates are
+already known to be wrong.
+
+Four commitments govern the writing.
+
+The first is \textbf{that the evidence is read, not recalled}. Every number in
+this book comes from a primary publication that was retrieved and checked
+while the book was written, and every identifier was resolved against a
+bibliographic registry rather than typed from memory. Where that process
+failed, the claim is marked or removed. The source ledger that accompanies the
+book is the record of that process, including its corrections.
+
+The second is \textbf{that null results are treated as results}. The exclusion
+curves of the last five years are the strongest constraints in the field, and
+the most common public error is to read them as evidence that dark matter
+does not exist or that the search has failed. They are neither. They are a
+map of where the answer is not.
+
+The third is \textbf{that the question ``have we already tapped it?'' is taken
+seriously in each of its senses, including the ones that turn out to have
+interesting answers}. We have used dark matter as a gravitational probe for
+ninety years. We have captured a private supply of it in the Solar System,
+where the local density is enhanced by orders of magnitude. We have, on
+paper, harvested it. The book's claim is that the interesting senses of the
+question have positive answers and the particle sense does not, and that the
+distance between those two facts is the distance the field has to close.
+
+The fourth is \textbf{that the reader is told what to do with the book}. Part
+VI is not a summary. It contains a decision framework, a candidate-by-candidate
+criterion set with cost, timescale and kill conditions, a statement of what a
+discovery would and would not prove, and a roadmap to 2040 that says what
+should be running when.
+
+Readers who want the state of play and the decision framework can read
+Part~III and Part~VI. Readers who want the physics can read Part~I and
+Part~II. Readers who want the origins question --- the part of the title that
+is hardest to answer honestly --- should read Part~IV and Chapter~\ref{ch:harvest},
+which explains why the origins question is downstream of the experimental
+programme rather than upstream of it.
+
+% ---- How to use this book -----------------------------------------------
+\chapter*{How to Use This Book}
+\addcontentsline{toc}{chapter}{How to Use This Book}
+\markboth{How to Use This Book}{How to Use This Book}
+
+\thispagestyle{plain}
+
+\begin{takeaway}{The shape of the book}
+\begin{itemize}
+\item \textbf{Part~\ref{part:budget}} fixes what is known: the energy budget, the
+five independent handles on the missing mass, the failure of baryons to supply
+it, and the small-scale structure that standard dark matter struggles to
+produce.
+\item \textbf{Part~\ref{part:candidates}} takes the candidate classes one at a
+time. For each: what the idea is, what it predicts, what it has cost the field
+so far, what would confirm it, and what would exclude it.
+\item \textbf{Part~\ref{part:frontier}} is the state of the field in 2026: the
+exclusion frontier and the neutrino fog, the 248~keV candidate, the anomaly
+record, the cosmological probes, and the tensions that cosmology itself has
+opened.
+\item \textbf{Part~\ref{part:origins}} asks where the dark matter came from.
+The relic density is a constraint, not an explanation, and the chapter on
+production mechanisms shows which mechanisms explain it and which merely
+reproduce it.
+\item \textbf{Part~\ref{part:tapped}} answers the title question in five
+senses, with the arithmetic attached to each.
+\item \textbf{Part~\ref{part:decision}} turns the assessment into a programme:
+why the answer must be a portfolio, what each candidate's decision criteria
+are, what a discovery would prove, and what should run when.
+\end{itemize}
+\end{takeaway}
+
+Three readings are possible, and each is coherent.
+
+\emph{If you want to know where the field stands.} Read Part~III. It is the
+compressed version of the book: where the frontier is, what the one live
+candidate is, and what the record of non-replications implies for how anyone
+should behave in 2027.
+
+\emph{If you want the physics.} Read Part~I, then Part~II. No background beyond
+undergraduate physics and astronomy is assumed; every result the argument
+depends on is stated, sourced and explained where the statement alone is not
+enough.
+
+\emph{If you have to decide something.} Read Chapter~\ref{ch:criteria} and
+Chapter~\ref{ch:roadmap}. The first is a set of decision criteria with kill
+conditions attached to each candidate; the second is a schedule with the
+experiments that should occupy it.
+
+\begin{mythbox}{Five things this book will not do}
+\begin{itemize}
+\item It will not announce a discovery. Nothing in the evidence assembled here
+meets the standard the field has adopted for one, and Chapter~\ref{ch:event248}
+says exactly what the 248~keV event is and is not.
+\item It will not declare dark matter undetectable. The fog is a floor for one
+class of search, not a verdict on the field; Chapter~\ref{ch:direct} sets out
+which channels remain open and why.
+\item It will not rank the candidates by popularity. Popularity in this field
+has been a poor predictor of survival for twenty years.
+\item It will not treat a failed replication as evidence of fraud. The anomaly
+record in Chapter~\ref{ch:indirect} is a record of statistical and modelling
+error, not of misconduct.
+\item It will not discuss how the book was produced. The methods behind it are
+in the accompanying source materials, not in the text.
+\end{itemize}
+\end{mythbox}
+
+\vspace{8pt}
+\noindent{\small\color{txtdim}\sffamily
+Conventions. Mathematical statements are given in ordinary notation. Cross
+sections are quoted in the units their source publications use, with the local
+density assumption stated wherever a limit is compared with another. Where the
+book says that something was verified, it means that the identifier was
+resolved against a bibliographic registry and the resolved title matched the
+paper intended --- not that it was recalled. Where the book says
+``unverified'', it means exactly that, and the sentence in question says what
+would be needed to verify it.\par}

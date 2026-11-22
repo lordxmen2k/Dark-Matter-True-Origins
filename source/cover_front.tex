@@ -1,0 +1,84 @@
+% =====================================================================
+%  Front cover — Dark Matter
+%  Typeset standalone at the 6 x 9 in trim, full bleed.
+%  Vertical positions are in inches measured from the foot of the page.
+% =====================================================================
+\documentclass{article}
+\usepackage[paperwidth=6in,paperheight=9in,margin=0pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\setmainfont{Outfit}[
+  UprightFont={Outfit Regular}, BoldFont={Outfit Bold},
+  ItalicFont={Outfit Regular}, ItalicFeatures={FakeSlant=0.20},
+  BoldItalicFont={Outfit Bold}, BoldItalicFeatures={FakeSlant=0.20},
+  Ligatures={TeX}]
+% The cover sets most of its type in \sffamily. Without an explicit
+% sans face that is Latin Modern Sans, so the cover would carry two
+% typefaces where the book carries one.
+\setsansfont{Outfit}[
+  UprightFont={Outfit Regular}, BoldFont={Outfit Bold},
+  ItalicFont={Outfit Regular}, ItalicFeatures={FakeSlant=0.20},
+  BoldItalicFont={Outfit Bold}, BoldItalicFeatures={FakeSlant=0.20},
+  Ligatures={TeX}]
+\setmonofont{DejaVu Sans Mono}[
+  UprightFont={DejaVu Sans Mono}, BoldFont={DejaVu Sans Mono Bold},
+  Ligatures={TeX}]
+
+\definecolor{ink}{HTML}{0B0E1A}
+\definecolor{accent}{HTML}{F0C36A}
+\definecolor{txt}{HTML}{E8EAF0}
+\definecolor{dim}{HTML}{98A0B0}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+  % ---- the plate, full bleed --------------------------------------------
+  \node[anchor=south west,inner sep=0] at (current page.south west)
+    {\includegraphics[width=\paperwidth,height=\paperheight]{../figures/cover_front_art.jpg}};
+
+  % ---- identity block ----------------------------------------------------
+  \node[anchor=south west,inner sep=0,text=accent] at ([xshift=0.60in,yshift=8.30in]current page.south west)
+    {\fontsize{7.0}{8.4}\selectfont\sffamily
+     \addfontfeatures{LetterSpace=18}A STATE-OF-THE-FIELD ASSESSMENT FOR THE DECADE AHEAD};
+
+  \node[anchor=south west,inner sep=0,text=txt] at ([xshift=0.60in,yshift=7.66in]current page.south west)
+    {\fontsize{44}{50}\selectfont\sffamily\bfseries DARK MATTER};
+
+  \fill[accent] ([xshift=0.60in,yshift=7.32in]current page.south west)
+         rectangle ([xshift=5.48in,yshift=7.29in]current page.south west);
+
+  \node[anchor=south west,inner sep=0,text=accent,align=left] at ([xshift=0.60in,yshift=6.84in]current page.south west)
+    {\fontsize{11.2}{14}\selectfont\sffamily
+     Its True Origins,\\
+     Whether We Have Already Tapped It,\\
+     and Why the Answer Matters};
+
+  \node[anchor=south west,inner sep=0,text=dim,align=left] at ([xshift=0.60in,yshift=5.42in]current page.south west)
+    {\fontsize{9.6}{13.2}\selectfont\sffamily\itshape
+     We have never touched it. Every number we hold\\
+     about dark matter was inferred from its gravity.};
+
+  % ---- credits -----------------------------------------------------------
+  \node[anchor=south west,inner sep=0,text=txt] at ([xshift=0.60in,yshift=2.34in]current page.south west)
+    {\fontsize{12.4}{14.2}\selectfont\sffamily\bfseries GERALD ENRIQUE};
+
+  \node[anchor=south west,inner sep=0,text=txt] at ([xshift=0.60in,yshift=2.135in]current page.south west)
+    {\fontsize{12.4}{14.2}\selectfont\sffamily\bfseries NELSON MC KENZIE};
+
+  \fill[accent] ([xshift=0.60in,yshift=1.875in]current page.south west)
+         rectangle ([xshift=1.16in,yshift=1.898in]current page.south west);
+
+  \node[anchor=south west,inner sep=0,text=dim,align=left] at ([xshift=0.60in,yshift=1.18in]current page.south west)
+    {\fontsize{8.4}{11.8}\selectfont\sffamily
+     Tico Internet LLC\\
+     2026 First Edition\\
+     Licensed under the Apache License 2.0\\
+     DOI 10.5281/zenodo.24435288};
+\end{tikzpicture}
+\null
+\end{document}

@@ -1,0 +1,12 @@
+{
+  "requests": [
+    {
+      "prompt": "Flat two-dimensional abstract astronomy artwork for a book cover plate, vertical 2:3 composition, edge-to-edge full bleed. A deep indigo and near-black field of space fills the entire frame from edge to edge. Across the lower third, a broad, soft, luminous band of pale gold and warm amber dust arcs gently from the lower left to the middle right, like the plane of a galaxy seen edge-on, with fine granular texture, warm ochre and dull bronze blooms, and a scattering of small dark dust motes drifting along the band. The upper half of the frame is almost empty, very dark and calm, providing negative space for a title block. A faint dusting of tiny dim stars, mostly small and low-contrast. Visible brushwork and pigment granulation, like a watercolour and ink wash on heavy cotton rag paper, with soft edge blooms, subtle paper tooth and slight tonal unevenness. Muted, sophisticated, luminous, slightly melancholy, restrained. Completely flat graphic composition with no perspective and no physical objects. Absolutely no text, no letters, no numbers, no symbols, no signature, no watermark, no border, no frame, no rectangle edges, no 3D rendering, no book, no spine, no pages, no binding, no bevel, no emboss, no drop shadow, no lens flare, no UI elements.",
+      "aspect_ratio": "2:3",
+      "area": "4K",
+      "n": 1,
+      "output_format": "jpeg",
+      "output_file": "cover_art"
+    }
+  ]
+}

@@ -20,3 +20,6 @@ source/t.idx
 *.pyc
 __pycache__/
 .DS_Store
+
+# review artefacts
+.review/
