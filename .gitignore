@@ -1,0 +1,22 @@
+# LaTeX build products
+source/*.aux
+source/*.idx
+source/*.ind
+source/*.ilg
+source/*.log
+source/*.out
+source/*.toc
+source/*.lof
+source/*.lot
+source/*.fls
+source/*.fdb_latexmk
+source/*.synctex.gz
+source/.wordcount
+source/generated.tex
+source/main.pdf
+source/cover_front.pdf
+source/cover_back.pdf
+source/t.idx
+*.pyc
+__pycache__/
+.DS_Store

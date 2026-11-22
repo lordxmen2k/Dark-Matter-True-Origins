@@ -1,0 +1,34 @@
+# Verified identifiers for the source ledger. Every entry below was resolved
+# against Crossref, INSPIRE-HEP or the arXiv API and the resolved title was
+# compared with the intended paper. Run:
+#   python3 research/scripts/verify_dois.py research/scripts/dois.txt
+10.1103/4dyc-z8zf
+10.1103/msw4-t342
+10.1103/2lrq-f6bk
+10.1103/PhysRevLett.134.011805
+10.1051/0004-6361/201833910
+10.1103/d7mg-6sqq
+10.1103/PhysRevLett.134.111002
+10.1088/1475-7516/2025/11/080
+10.1093/mnras/staf1685
+10.1103/PhysRevLett.132.121801
+10.1038/s41550-023-01943-9
+10.1086/150317
+10.5479/ads/bib/1939licob.19.41b
+10.1086/316369
+10.1038/s41550-017-0059
+10.1088/1361-6471/abc534
+10.1016/j.dark.2020.100503
+10.1103/PhysRevD.101.083012
+10.1088/1361-6633/ac5754
+10.1088/1475-7516/2018/04/009
+10.1103/PhysRevD.102.095018
+10.1007/JHEP07(2024)136
+10.1038/s41467-024-45033-4
+10.1086/508162
+10.1103/physrevlett.121.011102
+10.1038/s41550-022-01825-6
+10.1103/tr6y-kpc6
+10.1088/1674-4527/ae842f
+10.1088/1674-4527/ae8429
+10.1142/S0217751X19300138
