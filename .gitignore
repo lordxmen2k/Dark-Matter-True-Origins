@@ -23,3 +23,9 @@ __pycache__/
 
 # review artefacts
 .review/
+
+# review scratch
+.review/
+figures/fig_*.png
+figures/cover_*preview.png
+figures/cover_*_view.png
